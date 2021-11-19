@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activit.Activity.Otp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Mã OTP gồm 4 chữ số được gửi về điện thoại của bạn .Bạn vui lòng nhập mã để xác thực tài khoản"
+        android:textColor="#f000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9F6161"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/edt3"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="#9F6161"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="#9F6161"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:background="#9F6161"
+        android:gravity="center"
+        android:inputType="number"
+
+        app:layout_constraintEnd_toStartOf="@+id/edt2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/txtXacNhan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="#FFAAAA"
+        android:gravity="center"
+        android:text="Xác nhận"
+
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Chưa nhập được mã ."
+        android:textColor="#f000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtXacNhan" />
+
+    <TextView
+        android:id="@+id/txtSend"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:text=" Gửi lại"
+        android:textColor="#f000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtXacNhan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
